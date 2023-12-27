@@ -12,10 +12,6 @@ The repository contains the following files (we indicate with 'S' the files rela
 
 - [S] **avg_main_from_sh**.m: MATLAB file intended to be launched from a bash script with some of the parameters initialized. It does not display plots and messages, thus it is not for debugging.
 
-- [S] **launcher.sh**: bash script to launch one instance of the MATLAB file for a specific configuration of the parameters. In principle, it gets the input arguments from the shell script jobmaster.sh, but this setting can be replaced.
-
-- [S] **jobmaster.sh**: bash script to iterate over all the possible configurations of parameters. For each specific configuration, it launches many launcher.sh instances in parallel.
-
 
 - [S] **visualization.m**: MATLAB file to load the (synthetic) numerical results and display/save the plots of interest. 
 
@@ -24,8 +20,4 @@ The repository contains the following files (we indicate with 'S' the files rela
 - [R] **mnist.m**: script to run the MNIST section
 - [R] **traffic_volume.m**: script to run the Traffic Volume section
 
-
-- **Analysis.mlx**: live script (notebook) with some clarifying concepts from the theory.
-
 - **utils**: folder with MATLAB functions needed for the main code execution.
-- **notebooks**: folder with live scripts mainly used at the beginning for debugging puroposes
